@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{764023C8-5B9B-4B15-88E2-BCC116674FF2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Frontend.Web</RootNamespace>
+    <AssemblyName>Frontend.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\animate\animate.css" />
+    <Content Include="Assets\animate\set.css" />
+    <Content Include="Assets\bootstrap\css\bootstrap.css" />
+    <Content Include="Assets\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Assets\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Assets\bootstrap\js\bootstrap.js" />
+    <Content Include="Assets\gallery\blueimp-gallery.min.css" />
+    <Content Include="Assets\gallery\jquery.blueimp-gallery.min.js" />
+    <Content Include="Assets\jquery.js" />
+    <Content Include="Assets\mobile\touchSwipe.min.js" />
+    <Content Include="Assets\respond\respond.js" />
+    <Content Include="Assets\script.js" />
+    <Content Include="Assets\spa.css" />
+    <Content Include="Assets\style.css" />
+    <Content Include="Assets\toastr.css" />
+    <Content Include="Assets\wow\wow.min.js" />
+    <Content Include="Controllers\AddBasementController.js" />
+    <Content Include="Controllers\AddDriverController.js" />
+    <Content Include="Controllers\AddEmployeeController.js" />
+    <Content Include="Controllers\EmployeesGridController.js" />
+    <Content Include="Controllers\AdminPanelController.js" />
+    <Content Include="Controllers\MapModalController.js" />
+    <Content Include="Controllers\MainController.js" />
+    <Content Include="Controllers\PlaceAnOrderController.js" />
+    <Content Include="Definitions.js" />
+    <Content Include="Directives\NgGrid.js" />
+    <Content Include="Directives\NgDropdown.js" />
+    <Content Include="Images\back1.jpg" />
+    <Content Include="Images\back2.jpg" />
+    <Content Include="Images\back3.jpg" />
+    <Content Include="Images\back4.jpg" />
+    <Content Include="Images\bg.jpg" />
+    <Content Include="Images\favicon.ico" />
+    <Content Include="Images\lab.jpg" />
+    <Content Include="Images\lines.png" />
+    <Content Include="Images\logo%402x.png" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\partners\1.jpg" />
+    <Content Include="Images\partners\2.jpg" />
+    <Content Include="Images\partners\3.jpg" />
+    <Content Include="Images\partners\4.jpg" />
+    <Content Include="Images\portfolio\1.jpg" />
+    <Content Include="Images\portfolio\10.jpg" />
+    <Content Include="Images\portfolio\11.jpg" />
+    <Content Include="Images\portfolio\12.jpg" />
+    <Content Include="Images\portfolio\2.jpg" />
+    <Content Include="Images\portfolio\3.jpg" />
+    <Content Include="Images\portfolio\4.jpg" />
+    <Content Include="Images\portfolio\5.jpg" />
+    <Content Include="Images\portfolio\6.jpg" />
+    <Content Include="Images\portfolio\7.jpg" />
+    <Content Include="Images\portfolio\8.jpg" />
+    <Content Include="Images\portfolio\9.jpg" />
+    <Content Include="Images\team\1.jpg" />
+    <Content Include="Images\team\10.jpg" />
+    <Content Include="Images\team\11.jpg" />
+    <Content Include="Images\team\12.jpg" />
+    <Content Include="Images\team\13.jpg" />
+    <Content Include="Images\team\14.jpg" />
+    <Content Include="Images\team\15.jpg" />
+    <Content Include="Images\team\16.jpg" />
+    <Content Include="Images\team\17.jpg" />
+    <Content Include="Images\team\18.jpg" />
+    <Content Include="Images\team\19.jpg" />
+    <Content Include="Images\team\2.jpg" />
+    <Content Include="Images\team\3.jpg" />
+    <Content Include="Images\team\4.jpg" />
+    <Content Include="Images\team\5.jpg" />
+    <Content Include="Images\team\6.jpg" />
+    <Content Include="Images\team\7.jpg" />
+    <Content Include="Images\team\8.jpg" />
+    <Content Include="Images\team\9.jpg" />
+    <Content Include="Index.html" />
+    <Content Include="Lib\angular-route.js" />
+    <Content Include="Lib\angular.js" />
+    <Content Include="Lib\jquery-2.2.4.js" />
+    <Content Include="Lib\toastr.js" />
+    <Content Include="Lib\ui-bootstrap-tpls-1.3.3.js" />
+    <Content Include="Services\BasementService.js" />
+    <Content Include="Services\UserService.js" />
+    <Content Include="Services\OrderService.js" />
+    <Content Include="Views\AddDriver.html" />
+    <Content Include="Views\AddBasement.html" />
+    <Content Include="Views\AddEmployee.html" />
+    <Content Include="Views\AdminPanel.html" />
+    <Content Include="Views\ConfirmOrder.html" />
+    <Content Include="Views\EmployeesGrid.html" />
+    <Content Include="Views\MapModal.html" />
+    <Content Include="Views\PlaceAnOrder.html" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Assets\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Assets\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64710</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:64710/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

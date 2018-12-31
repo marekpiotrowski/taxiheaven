@@ -1,0 +1,35 @@
+﻿<Page
+    x:Class="Frontend.Mobile.Views.Default"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Frontend.Mobile.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBlock FontSize="18" HorizontalAlignment="Left" Margin="40,10,0,0" TextWrapping="Wrap" Text="Status:" VerticalAlignment="Top"/>
+        <TextBlock TextAlignment="Right" FontSize="18" Text="{Binding Status, Mode=TwoWay}" HorizontalAlignment="Left" Margin="110,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="255"/>
+        <TextBlock FontSize="18" HorizontalAlignment="Left" Margin="40,45,0,0" TextWrapping="Wrap" Text="Aktywny?" VerticalAlignment="Top"/>
+        <ToggleSwitch IsOn="{Binding Active, Mode=TwoWay}" OffContent="" OnContent="" Margin="273,36,31,559" Width="96"/>
+        <TextBlock FontSize="18" HorizontalAlignment="Left" Margin="40,115,0,0" TextWrapping="Wrap" Text="Ostatnie zlecenia" VerticalAlignment="Top"/>
+        <ListBox x:Name="RecentOrders" Margin="40,137,0,134"
+   Width="328" HorizontalAlignment="Left" FontSize="16" Foreground="White" Background="Black" ItemsSource="{Binding RecentOrders}" >
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Vertical" Margin="2">
+                        <TextBlock Text="Skąd:" Margin="0" />
+                        <TextBlock TextWrapping="Wrap" Text="{Binding Start}" Margin="10,0,0,0" />
+                        <TextBlock Text="Dokąd:" Margin="0" />
+                        <TextBlock TextWrapping="Wrap" Text="{Binding Destination}" Margin="10,0,0,0" />
+                        <TextBlock Text="Status:" Margin="0" />
+                        <TextBlock TextWrapping="Wrap" Text="{Binding Status}" Margin="10,0,0,0" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <TextBlock FontSize="18" HorizontalAlignment="Left" Margin="110,527,0,0" TextWrapping="Wrap" Text="Oczekuję na zlecenie..." VerticalAlignment="Top"/>
+    </Grid>
+
+</Page>

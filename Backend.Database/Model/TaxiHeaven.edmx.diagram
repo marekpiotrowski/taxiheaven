@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="84e4ce0526eb4a58be26cf3a2c3c3dc4" Name="Diagram1">
+        <EntityTypeShape EntityType="TaxiHeaven.Model.Basement" Width="1.5" PointX="0.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="TaxiHeaven.Model.Car" Width="1.5" PointX="0.75" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TaxiHeaven.Model.Device" Width="1.5" PointX="0.75" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TaxiHeaven.Model.Driver" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="TaxiHeaven.Model.DriverStatus" Width="1.5" PointX="0.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TaxiHeaven.Model.Order" Width="1.5" PointX="7.5" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TaxiHeaven.Model.OrderStatus" Width="1.5" PointX="5.25" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TaxiHeaven.Model.WorkSession" Width="1.5" PointX="5.25" PointY="1.75" IsExpanded="true" />
+        <AssociationConnector Association="TaxiHeaven.Model.FK_Driver_Basement" ManuallyRouted="false" />
+        <AssociationConnector Association="TaxiHeaven.Model.FK_Driver_Car" ManuallyRouted="false" />
+        <AssociationConnector Association="TaxiHeaven.Model.FK_Driver_Device" ManuallyRouted="false" />
+        <AssociationConnector Association="TaxiHeaven.Model.FK_Driver_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="TaxiHeaven.Model.FK_WorkSession_Driver" ManuallyRouted="false" />
+        <AssociationConnector Association="TaxiHeaven.Model.FK_Order_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="TaxiHeaven.Model.FK_Order_WorkSession" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="TaxiHeaven.Model.Role" Width="1.5" PointX="7.375" PointY="10.375" />
+        <EntityTypeShape EntityType="TaxiHeaven.Model.User" Width="1.5" PointX="7.375" PointY="7" />
+        <EntityTypeShape EntityType="TaxiHeaven.Model.UserRole" Width="1.5" PointX="9.625" PointY="7.125" />
+        <AssociationConnector Association="TaxiHeaven.Model.FK_UserRole_Role" />
+        <AssociationConnector Association="TaxiHeaven.Model.FK_UserRole_User" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

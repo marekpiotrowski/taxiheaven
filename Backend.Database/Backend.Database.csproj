@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DD2238DC-4C53-41E2-B566-7FB61F17BA14}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Backend.Database</RootNamespace>
+    <AssemblyName>Backend.Database</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=4.2.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.4.2.1\lib\net45\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business\CarRepository.cs" />
+    <Compile Include="Business\DriverRepository.cs" />
+    <Compile Include="Business\OrderRepository.cs" />
+    <Compile Include="Business\UserRepository.cs" />
+    <Compile Include="Business\BasementRepository.cs" />
+    <Compile Include="Business\DeviceRepository.cs" />
+    <Compile Include="Business\UserRoleRepository.cs" />
+    <Compile Include="Business\WorkSessionRepository.cs" />
+    <Compile Include="Model\Basement.cs">
+      <DependentUpon>TaxiHeaven.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Car.cs">
+      <DependentUpon>TaxiHeaven.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Device.cs">
+      <DependentUpon>TaxiHeaven.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Driver.cs">
+      <DependentUpon>TaxiHeaven.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DriverOrdersCount_Result.cs">
+      <DependentUpon>TaxiHeaven.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DriverStatus.cs">
+      <DependentUpon>TaxiHeaven.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DriverStatusEnum.cs" />
+    <Compile Include="Model\Order.cs">
+      <DependentUpon>TaxiHeaven.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\OrderStatus.cs">
+      <DependentUpon>TaxiHeaven.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\OrderStatusEnum.cs" />
+    <Compile Include="Model\Role.cs">
+      <DependentUpon>TaxiHeaven.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TaxiHeaven.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TaxiHeaven.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TaxiHeaven.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TaxiHeaven.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TaxiHeaven.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TaxiHeaven.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\User.cs">
+      <DependentUpon>TaxiHeaven.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\UserRole.cs">
+      <DependentUpon>TaxiHeaven.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\WorkSession.cs">
+      <DependentUpon>TaxiHeaven.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Base\IRepository.cs" />
+    <Compile Include="Base\Repository.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="App.Config" />
+    <EntityDeploy Include="Model\TaxiHeaven.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>TaxiHeaven.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model\TaxiHeaven.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>TaxiHeaven.edmx</DependentUpon>
+      <LastGenOutput>TaxiHeaven.Context.cs</LastGenOutput>
+    </None>
+    <None Include="Model\TaxiHeaven.edmx.diagram">
+      <DependentUpon>TaxiHeaven.edmx</DependentUpon>
+    </None>
+    <None Include="Model\TaxiHeaven.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>TaxiHeaven.edmx</DependentUpon>
+      <LastGenOutput>TaxiHeaven.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,100 @@
+﻿<div>
+    <div class="col-md-offset-1 col-md-10 place-an-order">
+        <h4>DODAJ KIEROWCĘ</h4>
+        <h5>DANE KIEROWCY</h5>
+        <div class="row">
+            <div class="form-group">
+                <label class="col-sm-12 control-label">Imię</label>
+                <div class="col-sm-offset-3 col-sm-6">
+                    <input type="text" ng-model="model.FirstName" class="form-control" placeholder="Imię">
+                </div>
+            </div>
+        </div><br/>
+        <div class="row">
+            <div class="form-group">
+                <label class="col-sm-12 control-label">Nazwisko</label>
+                <div class="col-sm-offset-3 col-sm-6">
+                    <input type="text" ng-model="model.LastName" class="form-control" placeholder="Nazwisko">
+                </div>
+            </div>
+        </div><br/>
+        <div class="row">
+            <div class="form-group">
+                <label class="col-sm-12 control-label">Numer telefonu</label>
+                <div class="col-sm-offset-3 col-sm-6">
+                    <input type="text" ng-model="model.PhoneNumber" class="form-control" placeholder="Numer telefonu">
+                </div>
+            </div>
+        </div><br/>
+        <div class="row">
+            <div class="form-group">
+                <label class="col-sm-12 control-label">Baza:</label>
+                <div class="col-sm-offset-3 col-sm-6">
+                    <select ng-dropdown="model.BasementId" data-value-property="Id" data-name-property="Name" data-source="basements" class="form-control">
+                    </select>
+                </div>
+            </div>
+        </div>
+        <hr style="width: 70%"/>
+        <h5>DANE AUTA</h5>
+        <div class="row">
+            <div class="form-group">
+                <label class="col-sm-12 control-label">Numer VIN</label>
+                <div class="col-sm-offset-3 col-sm-6">
+                    <input type="text" ng-model="model.VehicleIdentificationNumber" class="form-control" placeholder="VIN">
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="form-group">
+                <label class="col-sm-12 control-label">Marka i model</label>
+                <div class="col-sm-offset-3 col-sm-6">
+                    <input type="text" ng-model="model.Make" class="form-control" placeholder="Marka i model">
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="form-group">
+                <label class="col-sm-12 control-label">Rok produkcji</label>
+                <div class="col-sm-offset-3 col-sm-6">
+                    <input type="number" ng-model="model.Year" class="form-control" placeholder="Rok produkcji">
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="form-group">
+                <label class="col-sm-12 control-label">Przebieg</label>
+                <div class="col-sm-offset-3 col-sm-6">
+                    <input type="number" ng-model="model.Mileage" class="form-control" placeholder="Przebieg">
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="form-group">
+                <label class="control-label"><input ng-init="model.Special = false" type="checkbox" style="position: relative; top: 2px; right: 5px;" ng-model="model.Special" />Auto specjalistyczne?</label>               
+            </div>
+        </div>
+        <br />
+        <hr style="width: 70%" />
+        <h5>DANE URZĄDZENIA</h5>
+        <div class="row">
+            <div class="form-group">
+                <label class="col-sm-12 control-label">Numer IMEI urządzenia</label>
+                <div class="col-sm-offset-3 col-sm-6">
+                    <input type="text" ng-model="model.HardwareId" class="form-control" placeholder="Numer IMEI urządzenia">
+                </div>
+            </div>
+        </div>
+        <br/><br/>
+        <div class="form-group">
+            <div class="">
+                <button type="button" ng-click="add()" class="btn btn-default">Dodaj</button>
+                <button type="button" ng-click="cancel()" class="btn btn-default">Anuluj</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,138 @@
+﻿<div>
+    <div class="col-md-offset-1 col-md-5 place-an-order">
+        <div class="row">
+
+            <div class="form-inline">
+                <div style="position: relative; left: 10px;"  class="form-group from">
+                    <label for="start">Skąd?</label>
+                    <input readonly ng-model="model.Start" type="text" class="form-control" id="start" placeholder="Skąd">
+                    <p class="help-block">
+                        <a href="javascript:void(0)" ng-click="chooseStart()">Wybierz na mapie</a>
+                    </p>
+                </div>
+                <div class="form-group">
+                    <label for="destination">Dokąd?</label>
+                    <input readonly ng-model="model.Destination" type="text" class="form-control" id="destination" placeholder="Dokąd">
+                    <p class="help-block">
+                        <a href="javascript:void(0)" ng-click="chooseDestination()">Wybierz na mapie</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-inline">
+                <div style="position: relative; left: 22px;" class="form-group from">
+                    <label for="first-name">Imię</label>
+                    <input ng-model="model.FirstName" type="text" class="form-control" id="first-name" placeholder="Imię">
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Nazwisko</label>
+                    <input ng-model="model.LastName" type="text" class="form-control" id="last-name" placeholder="Nazwisko">
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="form-inline">
+                <div class="form-group from">
+                    <label for="phone">Telefon</label>
+                    <input ng-model="model.PhoneNumber" type="text" class="form-control" id="phone" placeholder="Telefon">
+                </div>
+                <div class="form-group">
+                    <label for="email">e-mail</label>
+                    <input ng-model="model.Email" type="text" class="form-control" id="email" placeholder="e-mail">
+                </div>
+            </div>
+        </div><br/>
+        <div class="row">
+            <div class="checkbox">
+                <label><input ng-model="model.RequiresSpecialCar" style="position: relative; top: 1px; left: -3px;" type="checkbox" value="">Wymaga specjalnego auta?</label>
+            </div>
+        </div><br/>
+        <div class="">
+            <div class="">
+                <button ng-click="placeAnOrder()" type="button" class="btn btn-primary">Zamów</button>
+            </div>
+        </div>
+    </div>
+    <div ng-show="showLogin()" class="col-md-offset-1 col-md-4 sign-in">
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="email-login" class="col-sm-2 control-label">e-mail</label>
+                <div class="col-sm-10">
+                    <input type="email" ng-model="login" class="form-control" id="email-login" placeholder="e-mail">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password" class="col-sm-2 control-label">Hasło</label>
+                <div class="col-sm-10">
+                    <input type="password" ng-model="password" class="form-control" id="password" placeholder="Hasło">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="">
+                    <button type="button" ng-click="signIn()" class="btn btn-default">Zaloguj</button>
+                    <button type="button" ng-click="switchToRegister()" class="btn btn-default">Zarejestruj</button>
+                </div>
+            </div>
+        </form>
+
+
+    </div>
+    <div ng-show="showRegister()" class="col-md-offset-1 col-md-4 sign-up">
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="ticket" class="col-sm-2 control-label">Numer aplikacji</label>
+                <div class="col-sm-10">
+                    <input type="text" ng-model="user.TicketNumber" class="form-control" id="ticket" placeholder="Numer aplikacji">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email-login" class="col-sm-2 control-label">e-mail</label>
+                <div class="col-sm-10">
+                    <input type="email" ng-model="user.Email" class="form-control" id="email-login" placeholder="e-mail">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password" class="col-sm-2 control-label">Hasło</label>
+                <div class="col-sm-10">
+                    <input type="password" ng-model="user.Password" class="form-control" id="password" placeholder="Hasło">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Powtórz hasło</label>
+                <div class="col-sm-10">
+                    <input type="password" ng-model="user.ConfirmPassword" class="form-control" placeholder="Hasło">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Imię</label>
+                <div class="col-sm-10">
+                    <input type="text" ng-model="user.FirstName" class="form-control" placeholder="Imię">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Nazwisko</label>
+                <div class="col-sm-10">
+                    <input type="text" ng-model="user.LastName" class="form-control" placeholder="Nazwisko">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Numer telefonu</label>
+                <div class="col-sm-10">
+                    <input type="number" ng-model="user.PhoneNumber" class="form-control" placeholder="Numer telefonu">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="">
+                    <button type="button" ng-click="signUp()" class="btn btn-default">Zarejestruj</button>
+                    <button type="button" ng-click="switchToSignIn()" class="btn btn-default">Zaloguj</button>
+                </div>
+            </div>
+        </form>
+
+
+    </div>
+
+</div>

@@ -1,0 +1,30 @@
+﻿<div>
+    <div class="col-md-offset-1 col-md-10 place-an-order">
+        <h4>DODAJ BAZĘ</h4>
+        <div style="position: relative; left: 10px;" class="form-group from">
+            <label for="start" class="col-sm-12">Miejsce</label>
+            <div class="col-sm-offset-3 col-sm-6">
+                <input readonly ng-model="model.Place" type="text" class="form-control" id="start" placeholder="Miejsce">
+            </div>
+            <p class="col-sm-12 help-block">
+                <a href="javascript:void(0)" ng-click="place()">Wybierz na mapie</a>
+            </p>
+        </div><br/>
+        <div class="row">
+            <div class="form-group">
+                <label class="col-sm-12 control-label">Nazwa</label>
+                <div class="col-sm-offset-3 col-sm-6">
+                    <input type="text" ng-model="model.Name" class="form-control" placeholder="Nazwa">
+                </div>
+            </div>
+        </div><br />
+        <div class="col-sm-12">
+            <div class="form-group">
+                <div class="">
+                    <button type="button" ng-click="add()" class="btn btn-default">Dodaj</button>
+                    <button type="button" ng-click="cancel()" class="btn btn-default">Anuluj</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

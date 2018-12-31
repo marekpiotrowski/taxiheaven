@@ -1,0 +1,91 @@
+﻿.place-an-order, .sign-in, .sign-up {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    color: white;
+}
+
+.place-an-order, .sign-in, .sign-up {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.place-an-order .help-block a:hover,
+.confirm-an-order a:hover {
+    color: white;
+}
+.place-an-order label {
+    margin-right: 5px;
+}
+.from {
+    margin-right: 40px;
+}
+
+#map {
+    height: 460px;
+}
+
+
+
+.view {
+    margin-top: 12%;
+}
+
+.controls {
+        margin-top: 10px;
+        border: 1px solid transparent;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        height: 32px;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      }
+
+      #pac-input {
+        background-color: #fff;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 12px;
+        padding: 0 11px 0 13px;
+        text-overflow: ellipsis;
+        width: 300px;
+      }
+
+      #pac-input:focus {
+        border-color: #4d90fe;
+      }
+
+      .pac-container {
+        font-family: Roboto;
+      }
+
+      #type-selector {
+        color: #fff;
+        background-color: #4d90fe;
+        padding: 5px 11px 0px 11px;
+      }
+
+      #type-selector label {
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 300;
+      }
+      #target {
+        width: 345px;
+      }
+
+.pac-container { z-index: 1051; }
+
+.confirm-an-order > .row > div{
+    margin: 10px;
+}
+
+.confirm-an-order > .row > div > span:first-child{
+    font-weight: bold;
+}
+
+.table thead th {
+    text-align: center;
+}
